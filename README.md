@@ -1,16 +1,109 @@
-# React + Vite
+# 🛒 TechStore
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple product listing page built with **React** and **Vite**.
+Browse tech products, search them, sort them, switch between grid/list views, and add items to a cart counter.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Page layout with **Header**, **Navbar**, **Body** and **Footer** components
+- Product cards (title, description, price)
+- 🔍 **Search** products by name (case-insensitive)
+- ↕️ **Sort** products:
+  - All (default order)
+  - Price: ascending / descending
+  - Name: A → Z / Z → A
+- 🔲 **View mode** selector: Grid / List
+- ➕ **Add to cart** button on each product with a live counter in the Navbar
 
-## React Compiler
+## 🛠️ Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<p>
+  <img src="https://skillicons.dev/icons?i=react,vite,html,css,git,github" alt="Tech stack" />
+</p>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Project Structure
+
+```
+TechStore/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Body.jsx      # Search, sort, view mode, product list
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   └── Navbar.jsx    # Navigation + cart counter
+│   ├── style/
+│   │   └── App.css       # Global styles
+│   ├── App.jsx           # Root component (holds cart state)
+│   └── main.jsx          # Entry point
+├── index.html
+├── package.json
+├── vite.config.js
+└── eslint.config.js
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- npm
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/TechStore.git
+
+# Go to the project folder
+cd TechStore
+
+# Install dependencies
+npm install
+```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+Then open the local URL shown in the terminal (usually [http://localhost:5173](http://localhost:5173)).
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Preview the production build
+
+```bash
+npm run preview
+```
+
+## 📸 Screenshot
+
+![TechStore Screenshot](./screenshot.png)
+
+## 🛣️ Roadmap
+
+- [x] Search products
+- [x] Sort by price and name
+- [x] Grid / List view modes
+- [x] Add to cart counter
+- [ ] Add more products
+- [ ] Category filter
+- [ ] Cart page (list items, remove, total price)
+- [ ] Replace DOM manipulation in view mode with React state (`className`)
+
+## 👤 Author
+
+**Your Name**
+GitHub: [@your-username](https://github.com/your-username)
+
+## 📄 License
+
+This project is licensed under the MIT License.
