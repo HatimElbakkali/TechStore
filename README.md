@@ -84,10 +84,6 @@ npm run build
 npm run preview
 ```
 
-## 📸 Screenshot
-
-![TechStore Screenshot](./screenshot.png)
-
 ## 🛣️ Roadmap
 
 - [x] Search products
@@ -99,11 +95,11 @@ npm run preview
 - [ ] Cart page (list items, remove, total price)
 - [ ] Replace DOM manipulation in view mode with React state (`className`)
 
-## 👤 Author
+## 📬 Connect
 
-**Your Name**
-GitHub: [@your-username](https://github.com/your-username)
+If you want to see more of my work or contact me:
+All links on Social media: [https://linktr.ee/HatimElbakkali](https://linktr.ee/HatimElbakkali)
 
-## 📄 License
+---
 
-This project is licensed under the MIT License.
+Thank you! 😊
