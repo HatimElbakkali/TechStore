@@ -107,7 +107,7 @@ export default function Body({add}) {
                 <p className="description">{products.description}</p>
               </div>
               <span className="price">{products.price}$</span>
-              <button type="button" onClick={handleClick}>Add</button>
+              <button type="button" className="add-btn" onClick={handleClick}>Add</button>
             </div>
           </li>
         ))}
